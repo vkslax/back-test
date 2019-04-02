@@ -45,10 +45,10 @@ fun hello() = "world"
 
 3. (medium) Please deploy this project to a compatible application server, later include the screenshot of the list Movies endpoint
 
-3. (medium) Include an screenshot of each of the endpoint operations, if needed please also check/fix the code
+3. (medium) Include a screenshot of each of the endpoint operations, if needed please also check/fix the code
 
 4. (medium) Add support to Bean Validation for the entity Movie and validate nulls on REST layer
 
-5. (hard) Please identify the Integration Testing for `MovieRepositoryTest` and implement each of the non-included CRUD methods
+5. (hard) Please identify the Integration Testing for `MovieRepository`, after that implement each of the non-included CRUD methods
 
 6. (hard) This project includes support for [Oracle Weblogic](https://www.oracle.com/technetwork/middleware/weblogic/downloads/wls-main-097127.html), please include a screenshot with your modifications being tested with Weblogic 
