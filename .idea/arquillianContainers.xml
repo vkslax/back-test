@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArquillianContainersManager">
+    <container containerId="container.arquillian.manual" name="Manual container configuration">
+      <exist-library name="Maven: fish.payara.extras:payara-embedded-web:4.1.153" level="project" />
+      <configurationSpecific>
+        <configurationSpecific runContainerQualifier="payara-embedded" />
+      </configurationSpecific>
+    </container>
+    <container containerId="container.arquillian.remote.webLogic.12.1.x" name="WebLogic Remote 12.1.x">
+      <maven-library groupId="org.jboss.arquillian.container" artifactId="arquillian-wls-remote-12.1.x" version="RELEASE" />
+      <configurationSpecific>
+        <configurationSpecific runContainerQualifier="weblogic-remote" />
+      </configurationSpecific>
+    </container>
+  </component>
+</project>
