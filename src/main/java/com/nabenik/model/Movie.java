@@ -2,6 +2,7 @@ package com.nabenik.model;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 
@@ -15,12 +16,15 @@ public class Movie implements Serializable {
     private Long movieId;
 
     @Column
+    @NotNull
     private String title;
 
     @Column
+    @NotNull
     private String year;
 
     @Column
+    @NotNull
     private String duration;
 
     public Movie(){
