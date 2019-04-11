@@ -3,21 +3,23 @@ package com.nabenik.repository;
 
 import com.nabenik.model.Movie;
 
+import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Default;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.validation.Valid;
 import java.util.List;
 
-@RequestScoped
-@Default
+@Local
+@Stateless
 public class MovieRepository {
 
-    @Inject
+    @PersistenceContext(unitName = "back-PU")
     EntityManager em;
 
     public Movie findById(Long id){
@@ -49,7 +51,8 @@ public class MovieRepository {
         return toEdit;
     }
 
-    public void delete(Movie movie){
+    public void delete(Long id){
+        Movie movie = findById(id);
         em.remove(movie);
     }
 

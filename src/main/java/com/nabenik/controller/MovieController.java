@@ -14,7 +14,6 @@ import java.util.List;
 @Path("/movies")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Stateless
 public class MovieController {
 
 
@@ -48,8 +47,7 @@ public class MovieController {
     @DELETE
     @Path("/{id}")
     public Response delete(@PathParam("id") Long id){
-        Movie movie = movieRepository.findById(id);
-        movieRepository.delete(movie);
+        movieRepository.delete(id);
         return Response.ok().build();
     }
 }

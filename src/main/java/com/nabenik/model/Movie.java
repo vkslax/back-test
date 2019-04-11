@@ -19,7 +19,7 @@ public class Movie implements Serializable {
     @NotNull
     private String title;
 
-    @Column
+    @Column(name = "movie_year")
     @NotNull
     private String year;
 

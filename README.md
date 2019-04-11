@@ -89,5 +89,6 @@ fun hello() = "world"
     ```
 
 5. (hard) Please identify the Integration Testing for `MovieRepository`, after that implement each of the non-included CRUD methods
+![](p5.JPG?raw=true)
 
 6. (hard) This project includes support for [Oracle Weblogic](https://www.oracle.com/technetwork/middleware/weblogic/downloads/wls-main-097127.html), please include a screenshot with your modifications being tested with Weblogic 
